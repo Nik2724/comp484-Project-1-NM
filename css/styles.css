@@ -1,27 +1,39 @@
 :root{ /* Testing out root, for defining CSS custom properties that I may used throughout the stylesheet often such as text colors and backgrounds*/
 --text-color: rgb(0, 0, 0);
 --background-color: rgb(135, 155, 165);
+--font-family: "Geist", sans-serif;
+--nav-background-color: hsl(207, 18%, 45%);
 }
 
+/* Start of header format for all html files */
 html,body{
     height: 100%;
     margin: 0;
-    margin: auto;
     padding: 0px;
-    background-image: url("images/background.png");
-    background-size: cover;
     background-color: var(--background-color);
 }
-
-h1{
-   text-align: center;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 3.5em;
-    font-weight: 350;
-    background-image: url("images/background.png");
-    background-size: cover;
+header{ /*Background image*/
+    background-image: url('../images/lake-baikal.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow: auto;
 }
-
+h1{ /*Header text styling*/
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size:5em;
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+    text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+nav{ /*This is the navigation bar container for the navigation menu*/
+    position: sticky;
+    top: 0; /* make the navigation bar stick to the top of the viewport */
+}
 .container-nav{ /*This is the navigation container for the navigation menu it is using flexbox to manage the layout of the navigation items*/
     display: flex;
     flex-direction: row;
@@ -33,35 +45,101 @@ h1{
     padding: 0;/* have padding and margin at 0 as I wanted the nav bar to stretch the full page*/
     margin: 0;  
 }
-
 .container-nav a{ /*this section styles the navigation links that are held and formatted withn the main container class*/
     color:white;
     text-decoration: none; /*used to remove the underline on the links*/
     padding: 15px;
     display: block;
     text-align: center;
+    transition: 0.5s ease;
+    text-shadow: 30px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .container-nav a:hover{ /*this section styles the navigation links when they are hovered over so that their is user feedback that the "button or link" is interactive*/
-background-color: hsl(205, 19%, 27%);
+background-color: rgb(50, 108, 122);
+text-shadow: 30px 2px 4px transparent;
+transition: 0.5s ease;
 }
-
 .item-nav{ /*this section styles the individual navigation items within the navigation container, they are the "buttons" or "links" that make up the navigation menu and are the main items within the flexbox*/
-    font: 1.85em Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
+    font-size: 1.85em;
     font-weight: 300;
-    background-color:hsl(207, 18%, 45%);
+    background-color:transparent;
     padding: 0px;
     margin: 0px;
     text-align: center;
     flex-grow: 1;
 }
+/* end of header format for all html files */
+
+
+/* Start of index.html styles */
 main{
     margin-left: 30px;
     margin-right: 30px;
 }
 h2{
-    font-family: Roboto, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 2.8em;
     font-weight: 500;
     text-align: left; 
+    color: #fff;
 }
-
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* allow the content to wrap if necessary */
+    align-content: flex-start; /* ensure the content aligns to the start of the container */
+}
+.welcome h2{
+    align-self: flex-start;
+    order: 1; /* ensure the heading appears before the paragraph in the flex container */
+    margin-right: auto;
+    margin-bottom: 10px; /* add some space below the heading */
+    
+   
+}
+.welcome p{
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    font-style: normal;
+    color: #fff;
+    line-height: 1.4; /* set the line height for better readability */
+    align-self: flex-start;
+    order: 3; /* ensure the paragraph appears after the heading in the flex container */
+    overflow: hidden; /* ensure the paragraph does not overflow its container */
+    position: absolute */
+    
+    
+  
+}
+.welcome aside{
+    margin-top: 50px; /* add some space above the video wrapper */
+    align-self: flex-end;
+    order: 2; /* ensure the video wrapper appears after the paragraph in the flex container */
+    position: right; /* ensure the video wrapper is positioned relative to its container */
+    
+}
+.box{
+    border: 1px solid #fff;
+    ;
+}
+.wrapper-home{
+    padding: 0px;
+    font-size: 20px;
+    width: 350px;
+    font-family: var(--font-family);
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    order: 3; /* ensure the video wrapper appears after the paragraph in the flex container */
+    margin-left: auto;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+/* end of index.html styles */
