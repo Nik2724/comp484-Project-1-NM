@@ -30,10 +30,12 @@ h1{ /*Header text styling*/
     color: #fff;
     text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5);  
 }
-nav{ /*This is the navigation bar container for the navigation menu*/
-    position: sticky;
+nav{
     top: 0; /* make the navigation bar stick to the top of the viewport */
+    position: sticky; /* make the navigation bar stick to the top of the viewport */
+    
 }
+
 .container-nav{ /*This is the navigation container for the navigation menu it is using flexbox to manage the layout of the navigation items*/
     display: flex;
     flex-direction: row;
@@ -47,17 +49,20 @@ nav{ /*This is the navigation bar container for the navigation menu*/
 }
 .container-nav a{ /*this section styles the navigation links that are held and formatted withn the main container class*/
     color:white;
+    font-weight: 500;
     text-decoration: none; /*used to remove the underline on the links*/
     padding: 15px;
     display: block;
     text-align: center;
     transition: 0.5s ease;
-    text-shadow: 30px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.671);
 }
 .container-nav a:hover{ /*this section styles the navigation links when they are hovered over so that their is user feedback that the "button or link" is interactive*/
 background-color: rgb(50, 108, 122);
 text-shadow: 30px 2px 4px transparent;
 transition: 0.5s ease;
+color: white;
+text-decoration:none;
 }
 .item-nav{ /*this section styles the individual navigation items within the navigation container, they are the "buttons" or "links" that make up the navigation menu and are the main items within the flexbox*/
     font-family: var(--font-family);
@@ -74,58 +79,47 @@ transition: 0.5s ease;
 
 /* Start of index.html styles */
 main{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: #176183;
+}
+a:hover{
+    text-decoration: underline;
+    color: #348eb4d2;
 }
 h2{
     font-family: var(--font-family);
     font-optical-sizing: auto;
-    font-style: normal;
     font-size: 2.8em;
     font-weight: 500;
     text-align: left; 
     color: #fff;
-}
-.welcome{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; /* allow the content to wrap if necessary */
-    align-content: flex-start; /* ensure the content aligns to the start of the container */
-}
-.welcome h2{
-    align-self: flex-start;
-    order: 1; /* ensure the heading appears before the paragraph in the flex container */
     margin-right: auto;
-    margin-bottom: 10px; /* add some space below the heading */
-    
-   
+    margin-bottom: 40px; /* add some space below the heading */
+    font-style: italic;
 }
-.welcome p{
+p{
+    margin:auto;
+    margin-bottom: 80px; /* add some space below the paragraph */
     font-family: var(--font-family);
-    font-size: 1.5em;
+    font-size: 1.85em;
     font-style: normal;
     color: #fff;
-    line-height: 1.4; /* set the line height for better readability */
-    align-self: flex-start;
-    order: 3; /* ensure the paragraph appears after the heading in the flex container */
-    overflow: hidden; /* ensure the paragraph does not overflow its container */
-    position: absolute */
-    
-    
-  
+    line-height: 1.75;
+    overflow-wrap: anywhere;  
+}
+.welcome{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .welcome aside{
     margin-top: 50px; /* add some space above the video wrapper */
-    align-self: flex-end;
-    order: 2; /* ensure the video wrapper appears after the paragraph in the flex container */
     position: right; /* ensure the video wrapper is positioned relative to its container */
     
-}
-.box{
-    border: 1px solid #fff;
-    ;
 }
 .wrapper-home{
     padding: 0px;
@@ -134,12 +128,47 @@ h2{
     font-family: var(--font-family);
     border-radius: 20px;
     cursor: pointer;
-    align-self: flex-end;
-    order: 3; /* ensure the video wrapper appears after the paragraph in the flex container */
-    margin-left: auto;
 }
 video{
     width: 100%;
     height: auto;
+    display:block;
+    float:right;
+    margin-left: 10px; /* add some space to the left of the video */
+}
+hr{
+    margin:0;
+    margin-top: 0;
+    border: 0;
+}
+.seal-characteristics{
+    background-color: #fff;
+}
+
+.seal-characteristics div{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: black;
+
+}
+.seal-characteristics h2{
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-size: 2.8em;
+    font-weight: 500;
+    text-align: left; 
+    color: var(--nav-background-color);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px; /* add some space above the heading */
+    margin-bottom: 40px; /* add some space below the heading */
+    font-style: italic;
+    padding-top: 50px; /* add some space above the content */
+}
+.seal-characteristics p{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--nav-background-color);
 }
 /* end of index.html styles */
+
