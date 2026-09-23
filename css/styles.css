@@ -1,0 +1,47 @@
+html,body {
+    background: #36e9ec; /* Beccapurple */
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(57, 31, 88);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 0;
+    background: #36e9ec; /*mid section text sections ame color as the side margins*
+    line-height: 1.8;*/
+}
+h1{
+    font: 3.2em Arial, Helvetica, sans-serif;
+    margin-bottom: .4em;
+    color: rgb(0, 0, 0);
+}
+h2{
+    font: 2.4em Arial, Helvetica, sans-serif;
+    margin-bottom: .2em;
+    color: rgb(0, 0, 0);
+}
+h3{
+    font: 2.4em Arial, Helvetica, sans-serif;
+    margin-bottom: .2em;
+    color:rgb(0,0,0); 
+}
+p{
+    margin-bottom: 1.0em;
+}
+ul.top-nav {
+display: flex; /*aligning the nav section links horizontally */
+gap: 17px;
+list-style-type: none;
+width: 100%;
+padding: 0;
+margin: 0;
+}
