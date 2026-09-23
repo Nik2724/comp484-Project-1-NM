@@ -1,47 +1,67 @@
-html,body {
-    background: #36e9ec; /* Beccapurple */
+:root{ /* Testing out root, for defining CSS custom properties that I may used throughout the stylesheet often such as text colors and backgrounds*/
+--text-color: rgb(0, 0, 0);
+--background-color: rgb(135, 155, 165);
+}
+
+html,body{
+    height: 100%;
     margin: 0;
+    margin: auto;
+    padding: 0px;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-color: var(--background-color);
 }
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
-    padding: 0;
-}
-h1,h2,h3,h4,h5,h6 {
-    color: rgb(57, 31, 88);
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2.5% 2.5% 0;
-    background: #36e9ec; /*mid section text sections ame color as the side margins*
-    line-height: 1.8;*/
-}
+
 h1{
-    font: 3.2em Arial, Helvetica, sans-serif;
-    margin-bottom: .4em;
-    color: rgb(0, 0, 0);
+   text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 3.5em;
+    font-weight: 350;
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+.container-nav{ /*This is the navigation container for the navigation menu it is using flexbox to manage the layout of the navigation items*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* added wrap here to allow the navigation items to wrap onto the next line if necessary in case of window resizing */
+    align-content: flex-start;
+    list-style: none;
+    padding: 0;/* have padding and margin at 0 as I wanted the nav bar to stretch the full page*/
+    margin: 0;  
+}
+
+.container-nav a{ /*this section styles the navigation links that are held and formatted withn the main container class*/
+    color:white;
+    text-decoration: none; /*used to remove the underline on the links*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.container-nav a:hover{ /*this section styles the navigation links when they are hovered over so that their is user feedback that the "button or link" is interactive*/
+background-color: hsl(205, 19%, 27%);
+}
+
+.item-nav{ /*this section styles the individual navigation items within the navigation container, they are the "buttons" or "links" that make up the navigation menu and are the main items within the flexbox*/
+    font: 1.85em Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background-color:hsl(207, 18%, 45%);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    flex-grow: 1;
+}
+main{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 h2{
-    font: 2.4em Arial, Helvetica, sans-serif;
-    margin-bottom: .2em;
-    color: rgb(0, 0, 0);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2.8em;
+    font-weight: 500;
+    text-align: left; 
 }
-h3{
-    font: 2.4em Arial, Helvetica, sans-serif;
-    margin-bottom: .2em;
-    color:rgb(0,0,0); 
-}
-p{
-    margin-bottom: 1.0em;
-}
-ul.top-nav {
-display: flex; /*aligning the nav section links horizontally */
-gap: 17px;
-list-style-type: none;
-width: 100%;
-padding: 0;
-margin: 0;
-}
+
