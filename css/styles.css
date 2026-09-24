@@ -1,6 +1,6 @@
 :root{ /* Testing out root, for defining CSS custom properties that I may used throughout the stylesheet often such as text colors and backgrounds*/
 --text-color: rgb(0, 0, 0);
---background-color: rgb(135, 155, 165);
+--background-color: rgb(13, 59, 80);
 --font-family: "Geist", sans-serif;
 --nav-background-color: hsl(207, 18%, 45%);
 }
@@ -21,7 +21,8 @@ header{ /*Background image*/
 }
 h1{ /*Header text styling*/
     margin: 0;
-    padding: 50px;
+    padding-top: 15px;
+    padding-bottom: 100px;
     text-align: center;
     font-family: var(--font-family);
     font-size:5em;
@@ -85,11 +86,11 @@ main{
 a{
     font-style: normal;
     text-decoration: none;
-    color: #176183;
+    color: #32d6f3;
 }
 a:hover{
     text-decoration: underline;
-    color: #348eb4d2;
+    color: #0bacf1d2;
 }
 h2{
     font-family: var(--font-family);
@@ -170,5 +171,73 @@ hr{
     margin-right: 30px;
     color: var(--nav-background-color);
 }
+.seal-image{
+    float: left; /* ensure the image floats to the left of the text */
+    margin-right: 10px; /* add some space to the right of the image */
+}
+.wrapper-seal-characteristics{
+    float: left;
+    padding: 0px;
+    font-size: 20px;
+    width: 350px;
+    font-family: var(--font-family);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
 /* end of index.html styles */
 
+
+/* footer styles */
+footer{
+     background-color: var(--nav-background-color);
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 350;
+    font-size: 3em; /* set a base font size for the footer */
+    padding: 10px;
+    text-align: center;
+}
+.Ref{
+   margin-left: 30px;
+   margin-right: 30px;
+}
+.Ref{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.Ref h3{
+    color: #fff;
+    text-align: start;
+    margin-bottom: 10px;  /* add some space below the heading */
+    padding-top: 2px;
+    margin-top: 5px; /* add some space above the heading */
+
+}
+.Ref ol{
+    padding-top:20px;
+    list-style-type: decimal;
+    font-family: var(--font-family);
+    font-size: .55em; /* set a base font size for the list items */
+    text-align: start; /* align the list items to the start */
+    
+}
+.Ref li{
+    display: start;
+}
+.Ref a{
+    color: #fff;
+    text-decoration: none;
+}
+.Ref a:hover{
+    text-decoration: underline;
+}
+footer p{
+    font-size: .4em;
+    text-align: start; /* center the footer paragraph */
+    margin-bottom: 5px; /* add some space below the footer paragraph */
+    margin-top: 15px; /* add some space above the footer paragraph */
+    padding-top: 50px; /* add some padding around the footer paragraph */
+    margin-left: 30px; /* add some space to the left of the footer paragraph */
+    margin-right: 30px; /* add some space to the right of the footer paragraph */
+}
