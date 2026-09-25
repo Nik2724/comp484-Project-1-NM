@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Head section which contains meta information and links to stylesheets as well as an imported font that I liked for the project -->
  <head>
    <meta charset="utf-8" />
    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+   <!-- This is the imported font from Google Fonts -->
    <style> @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
    </style>
    <title>Lots and Lots of Seals!</title>
@@ -10,6 +12,7 @@
     <body>
       <header role="banner">
          <h1>Lots and Lots of Seals!</h1>
+         <!-- The navigation menu for the website -->
       <nav role="navigation">
          <ul class="container-nav">
             <li class="item-nav"><a href="index.html" title="Home">Home</a></li>
@@ -19,16 +22,19 @@
          </ul>
       </nav>
       </header>
+      <!-- main section of the page -->
     <main role="main">
+      <!-- used the div section for the welcome area as the main box for the content  -->
       <div class="welcome">
         <h2>Discover the Amazing World of Seals!</h2>
         <p>
+          <!-- nested the video element in the paragraph element to get the desired layout, also used a closing tag for the video element so that I could use the source tag to add multiple video formats for different browsers -->
           <video id="video" class="wrapper-home" width="350" controls muted autoplay loop>
             <source src="videos/seals-home.mp4" type="video/mp4">
             <source src="videos/seals-home.webm" type="video/webm">
             Your browser does not support html5 video.
          </video>
-        
+        <!-- added links to wikipedia articles for more information if the user desires to know more, the pages will open in a new tab -->
          Seals are fascinating marine mammals belonging to the group known as <a href="https://en.wikipedia.org/wiki/Pinniped" title="Wiki Pinnipeds" target="_blank">pinnipeds</a>, a name that refers to their fin-like feet. Pinnipeds include true seals, sea lions, fur seals, and walruses. They are adapted to life in the water, with streamlined bodies, flippers, sensitive whiskers, and a layer of blubber that helps them stay warm in cold environments.<br>
          </p>
          
@@ -41,6 +47,7 @@
          </p>
          <hr>
         </div>
+        <!-- decided to use a div for the seal characteristics section as it allows for better organization of the content as I did not feel section nor article was appropriate for the level of content. -->
         <div class="seal-characteristics">
           <h2>What Makes a Seal a Seal?</h2>
           <p>
@@ -55,23 +62,27 @@
             Although seals may look similar at first glance, there is considerable diversity among species. They vary in size, coloration, behavior, habitat, diet, and conservation status.
           </p>
           <p>
+            <!-- similar to before I did the same video layout construction, however this time I included a track tag to add captions, track tag and the kind attribute were my chosen elements fot this project.-->
             <video id = "video" class= "wrapper-seal-characteristics" width="350" muted controls autoplay loop  >
               <source src="videos/Yo.mp4" type="video/webm">
               <source src="videos/Yo.webm" type="video/webm">
               Your browser does not support the video tag.
                 <track src="files/WEBVTT.vtt" kind="captions" srclang="en" label="English" default>
             </video>
+            <!-- here I added link to the ringed seal page, and the baikal seal link will point to the section about baikal seal on the ringed seal page -->
             The <a href="ring.html" title="Ringed Seal">ringed seal</a>, for example, is strongly associated with Arctic and sub-Arctic environments and is recognizable by the ring-shaped markings on its coat. The spotted seal has a different pattern and is found in northern waters around the Pacific and Arctic regions. <a href="ring.html" title="Baikal Seal">The Baikal seal</a> with its dark coat, meanwhile, is unique because its entire natural range is restricted to Lake Baikal like-wise to the Lagoda ringed seal which is native to Lake Lagoda, located in the Republic of Karelia and Leningrad in northwest Russia.
           </p>
           <p>
-            These differences make seals an interesting group to study. Looking at several species side by side shows how animals belonging to the same broader group can adapt to very different environments.<br><br>Their playful behavior and the ways that they exhibit a large range of social interactions and utilize different communications methods are fascinating and fun to study and observe in addition to their ecological significance.<br>&nbsp;
+            These differences make seals an interesting group to study. Looking at several species side by side shows how animals belonging to the same broader group can adapt to very different environments.<br><br>Their playful behavior and the ways that they exhibit a large range of social interactions and utilize different communications methods are fascinating and fun to study and observe in addition to their ecological significance.<br>&nbsp; 
           </p>
+          <!-- added a blank space herer at the end of the pargragh section for formatting reasons -->
         </div>
     </main>
       <footer>
+        <!-- within the footer section I added a ordered list for the citations and links the used websites, and articles. Cite tag was also one of my chosen tags for this project. -->
         <div class="Ref">
           <h3>References</h3>
-          <ol type="1">
+          <ol class="Ref" type="1">
             <li><cite><a href="https://en.wikipedia.org/wiki/Earless_seal" title="Wiki Earless Seals" target="_blank">https://en.wikipedia.org/wiki/Earless_seal</a></cite></li>
             <li><cite><a href="https://o-tower.co.jp/tokkaricenter.html" title="Okhotsk Tokkari Center" target="_blank">https://o-tower.co.jp/tokkaricenter.html</a></cite></li>
             <li><cite><a href="https://en.wikipedia.org/wiki/Pinniped" title="Wiki Pinnipeds" target="_blank">https://en.wikipedia.org/wiki/Pinniped</a></cite></li>
