@@ -190,6 +190,7 @@ hr{
 }
 /* end of index.html styles */
 
+/* After the index.html home page, the other pages follow simialr stucture of the pages broken down into 2 to 3 sections that have classes that areponding to their <div> section in the html files. This allows us to change up the style and look per section if we wanted too */
 /* Start of Ring.html */
 
 .ring-welcome{
@@ -265,13 +266,110 @@ hr{
     margin-left: 30px;
     margin-right: 30px;
 }
-.spotted-welcome div{
+.spotted-welcome img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.spotted-appearance{
+    background-color: #fff;
+}
+.spotted-appearance div{
+    margin-left: 30px;
+    margin-right: 30px; 
+    color: black;
+}
+.spotted-appearance h2{
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-size: 2.8em;
+    font-weight: 500;
+    text-align: left; 
+    color: var(--nav-background-color);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px; /* add some space above the heading */
+    margin-bottom: 40px; /* add some space below the heading */
+    font-style: italic;
+    padding-top: 50px; /* add some space above the content */
+}
+.spotted-appearance p{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--nav-background-color);
+    margin-bottom: 50px;
+}
+.spotted-appearance img{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/* End of Spotted.html styles */
+
+/* Start of Aquariums.html styles */
+.aquariums-welcome{
     margin-left: 30px;
     margin-right: 30px;
 }
-
-/* End of Spotted.html styles */
-
+.aquariums-tokkari{
+    background-color: #fff;
+}
+.aquariums-tokkari div{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.aquariums-tokkari h2{
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-size: 2.8em;
+    font-weight: 500;
+    text-align: left; 
+    color: var(--nav-background-color);
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px; /* add some space above the heading */
+    margin-bottom: 40px; /* add some space below the heading */
+    font-style: italic;
+    padding-top: 50px; /* add some space above the content */
+}
+.aquariums-tokkari p{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--nav-background-color);
+    margin-bottom: 50px;
+}
+.aquariums-tokkari img{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.aquariums-toba div{
+    margin-left: 30px;
+    margin-right: 30px;
+} 
+.aquariums-toba h2{
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-size: 2.8em;
+    font-weight: 500;
+    text-align: left; 
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px; /* add some space above the heading */
+    margin-bottom: 40px; /* add some space below the heading */
+    font-style: italic;
+    padding-top: 0px; /* add some space above the content */
+}
+.aquariums-toba p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+.aquariums-toba img{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 /* footer styles for all pages */
 footer{
     background-color: var(--nav-background-color);
@@ -303,8 +401,6 @@ footer{
     text-align: start; /* align the list items to the start */
     
 }
-
-
 .Ref a{
     color: #fff;
     text-decoration: none;
