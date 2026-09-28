@@ -34,7 +34,7 @@
         <p>
           <!-- nested the video element in the paragraph element to get the desired layout, also used a closing tag for the video element so that I could use the source tag to add multiple video formats for different browsers -->
            <!-- the crossorigin attribute is used to enable CORS for the video element set to anonymous, in this case the file is hosted locally so the attribute is mainly included for completeness, However if the video were hosted on a different domain, this attribute would be necessary to allow cross-origin access and using anonymous protects the user's privacy. -->
-          <video id="video" class="wrapper-home" crossorigin="anonymous" width="350" controls muted autoplay loop>
+          <video id="video" class="wrapper-home" crossorigin="anonymous" width="350"  muted autoplay loop>
             <source src="videos/seals-home.mp4" type="video/mp4">
             <source src="videos/seals-home.webm" type="video/webm">
             Your browser does not support html5 video.
